@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" role="img" aria-label="Diagram: two dashed lines cross to form an X. An arrow points down into the crossing point, and a second arrow continues downward away from it, widening out below.">
+  <!-- forces in tension -->
+  <g stroke="#111111" stroke-width="1.25" stroke-dasharray="7 6" fill="none">
+    <line x1="28" y1="28" x2="272" y2="272"/>
+    <line x1="272" y1="28" x2="28" y2="272"/>
+  </g>
+
+  <!-- the flow: in from above, out below -->
+  <g fill="#E8E0CF" stroke="#111111" stroke-width="1.25" stroke-linejoin="round">
+    <path d="M141 40 h18 v46 h13 l-22 26 -22 -26 h13 z"/>
+    <path d="M141 188 h18 v46 h13 l-22 26 -22 -26 h13 z"/>
+  </g>
+
+  <!-- the crux -->
+  <circle cx="150" cy="150" r="21" fill="#8B0000"/>
+</svg>

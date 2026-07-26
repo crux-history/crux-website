@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Accessibility Statement — Crux Monographic History</title>
+<meta name="description" content="How Crux Monographic History meets WCAG 2.2 Level AA.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <a class="masthead__mark" href="index.html" aria-label="CRUX home"><img src="assets/crux-icon.svg" alt=""></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="menu" id="menu" data-open="false" aria-label="Main">
+  <ul class="menu__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Notice</a></li>
+        <li><a href="accessibility.html">Accessibility Statement</a></li>
+  </ul>
+</nav>
+<main class="document" id="main">
+  <p class="document__eyebrow">Crux Monographic History</p>
+  <h1>Accessibility Statement</h1>
+  <p class="document__meta">Version 1.0<br>Last updated: [DATE OF PUBLICATION]</p>
+<hr />
+<p>CRUX is a reading application. Its entire purpose is to put words in front of people. An accessibility failure here is not a peripheral defect. It is a failure of the product.</p>
+<p>We work to the Web Content Accessibility Guidelines, version 2.2, at Level AA. We have audited CRUX against that standard rather than assumed it, and this page records what we found.</p>
+<hr />
+<h2>The Standard</h2>
+<p>WCAG is the international standard for digital accessibility. Level AA is the level at which a service is judged accessible in practice rather than in principle, and it is the level CRUX is built to.</p>
+<hr />
+<h2>What We Have Confirmed</h2>
+<p><strong>Colour and contrast.</strong> Every colour combination in CRUX has been measured. All of them meet Level AAA — the highest level, one above our target — for body text as well as headings, including Academic Crimson on Historical Linen.</p>
+<p><strong>Text size.</strong> CRUX honours the text size set on your device. Nothing in the application overrides it, and the interface reflows at the largest accessibility sizes rather than clipping.</p>
+<p><strong>Screen readers.</strong> The controls you read with are labelled. The switch between Article, Book and Listen announces itself as a set of tabs and reports which is selected. The audio player announces play, pause, skip and speed; the progress bar reports your position and can be moved. Page controls in the Book format announce themselves and say when they are unavailable. The bookmark control reports whether an article is saved.</p>
+<p><strong>Touch targets.</strong> Controls are sized to be operated without fine precision.</p>
+<p><strong>Images.</strong> Every image carries an editorial caption, which is read by everyone, and a separate description for readers using a screen reader.</p>
+<p><strong>Three ways to read.</strong> Every monograph exists as a scrolling Article, as a paginated Book, and as a Podcast. These are not variants of the content. They are the same monograph in three forms, and each carries the whole of it.</p>
+<p><strong>Nothing that flashes, moves, or hurries you.</strong> No flashing content. No autoplaying video. No decorative animation. No time limits anywhere in CRUX: nothing expires while you are reading, and nothing counts down.</p>
+<p><strong>No gamification.</strong> No streaks, no rewards, no badges, no leaderboards. CRUX contains nothing designed to pull you back or keep you moving.</p>
+<p><strong>Almost nothing to complete.</strong> Sign-in is through Google or Apple. There is no password to create, no registration form, and no data entry beyond a single tap.</p>
+<hr />
+<h2>Audio and Text</h2>
+<p>The podcast is drawn from the monograph. It is shorter than the article and contains no claim that is not in the text.</p>
+<p>The article is therefore a complete text alternative to the audio, and a fuller one than a transcript would be. Nothing in CRUX exists only as audio.</p>
+<hr />
+<h2>The Collections Timeline</h2>
+<p>One part of CRUX does not meet the standard, and we would rather set it out than let you find it.</p>
+<p>Collections may be explored through a timeline dial, moved by dragging along a chronology. It shows how a group of monographs sits across time. It operates by gesture, and it does not work with a screen reader.</p>
+<p>It is not the only route to anything. Every monograph on every timeline is also held in the Archive, which is an ordinary list with a search field and which works with a screen reader. Nothing in CRUX is reachable through the dial alone.</p>
+<p>This is a decision rather than an omission. The dial is a way of looking at the library, not a way into it, and rebuilding it as a list would remove what it is for while adding nothing the Archive does not already provide. If you cannot use the dial, use the Archive. You lose the chronology. You lose no reading.</p>
+<p>We consider that a reasonable position given the alternative available. If you do not, tell us, and we will look at it again.</p>
+<hr />
+<h2>The Writing Itself</h2>
+<p>CRUX publishes long-form historical scholarship. It is demanding, and deliberately so: depth is not a barrier to entry, it is the product.</p>
+<p>That is a decision about content, not about access. Everything around the writing — the controls, the labels, the instructions, the messages — is held to a different standard entirely, and must be plain. Where it is not, that is a fault worth reporting.</p>
+<hr />
+<h2>Keeping This Current</h2>
+<p>CRUX is audited against this standard when the interface changes, when any new interactive component is introduced, and in any event annually.</p>
+<p>This page is revised whenever the position changes, and the date at the head of it records when.</p>
+<hr />
+<h2>Reporting a Problem</h2>
+<p>Write to <strong>feedback@cruxhistory.com</strong>. Tell us what happened, what you were attempting, and which device you were using if you know it.</p>
+<p>CRUX is run by one person, so the message reaches someone who can act on it.</p>
+<p>If you are not satisfied with our response, the Equality Advisory and Support Service provides free advice on accessibility and disability discrimination at <strong>equalityadvisoryservice.com</strong>.</p>
+<hr />
+<p>Robert O'Sullivan, trading as CRUX Monographic History</p>
+</main>
+<footer class="footer">
+  <p><a href="mailto:feedback@cruxhistory.com">feedback@cruxhistory.com</a></p>
+  <p>Crux Monographic History</p>
+</footer>
+
+<script>
+(function () {
+  var toggle = document.querySelector('.menu-toggle');
+  var menu = document.getElementById('menu');
+  if (!toggle || !menu) return;
+
+  function setOpen(open) {
+    menu.setAttribute('data-open', String(open));
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) { var first = menu.querySelector('a'); if (first) first.focus(); }
+  }
+
+  toggle.addEventListener('click', function () {
+    setOpen(menu.getAttribute('data-open') !== 'true');
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.getAttribute('data-open') === 'true') {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+})();
+</script>
+</body>
+</html>

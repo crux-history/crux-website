@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About Us — Crux Monographic History</title>
+<meta name="description" content="Crux publishes serious, sourced historical monographs for readers who want substance without four hundred pages.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <a class="masthead__mark" href="index.html" aria-label="CRUX home"><img src="assets/crux-icon.svg" alt=""></a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<nav class="menu" id="menu" data-open="false" aria-label="Main">
+  <ul class="menu__list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+        <li><a href="privacy.html">Privacy Notice</a></li>
+        <li><a href="accessibility.html">Accessibility Statement</a></li>
+  </ul>
+</nav>
+
+<main class="document" id="main">
+  <p class="document__eyebrow">Crux Monographic History</p>
+  <h1>About Us</h1>
+
+  <h2>About</h2>
+
+  <p>Social media has fundamentally changed how we consume information. The result is a digital culture of endless scrolling; a feed of trivial, disposable content that rewards the superficial and punishes the substantive. Attention spans are shrinking, and depth is disappearing.</p>
+
+  <p>And yet, the appetite for something more meaningful has never been greater.</p>
+
+  <p>CRUX exists to answer that appetite. We are a monographic history platform built for people who want to understand not just what happened, but why: the structural forces, the decisive moments, and the long consequences that shape the world we live in today. The best stories ever told are found in history.</p>
+
+  <h2>Purpose</h2>
+
+  <p>History is not a sequence of trivial events. It is a structural matrix of cause, flashpoint, and consequence. Unfortunately, existing digital formats treat it as the former; reducing the most important events in human civilisation to gamified snippets, quick summaries, and shareable facts.</p>
+
+  <p>CRUX rejects that model entirely. Our purpose is to deliver intellectually serious, evidence-backed historical analysis in a format that respects both the subject matter and your intelligence: digestible enough to consume on a commute, yet substantial enough to change how you think.</p>
+
+  <h2>Vision</h2>
+
+  <p>Our vision is to deliver meaningful, digestible, and genuinely interesting content built specifically for busy professionals. We are re-writing history for the modern digital era.</p>
+
+  <h2>Principles</h2>
+
+  <h3>Rigour Over Reach</h3>
+
+  <p>CRUX will never gamify or reduce the most important events in history to something trivial. We are not trying to be the most popular app in the store. We are trying to be indispensable to the right audience. Depth is not a barrier to entry &mdash; it is the product.</p>
+
+  <h3>Evidence-Based</h3>
+
+  <p>Every analytical claim in a CRUX monograph is traceable to a verifiable source. Primary documents, peer-reviewed scholarship, and formal citations are not optional extras &mdash; they are the foundation. A claim without a source is an opinion. CRUX does not publish opinions.</p>
+
+  <h3>Methodical Over Pace</h3>
+
+  <p>We build carefully and deliberately. Speed is never prioritised over quality. The standard we set at the beginning is the standard we maintain.</p>
+
+  <h3>The Interface Is the Argument</h3>
+
+  <p>The way CRUX is navigated is not incidental to what it is arguing &mdash; it is the argument.</p>
+
+  <p>Every historical event has a crux: the decisive point at which forces in tension finally rupture. It is where the name comes from, and our interface reflects it directly. Every monograph is structured around three positions on the X-axis.</p>
+
+  <figure class="figure">
+    <div class="figure__body">
+      <div class="figure__key">
+        <div class="figure__row">
+          <span class="figure__label">Before</span>
+          <span class="figure__note">Structural preconditions</span>
+        </div>
+        <div class="figure__row figure__row--crux">
+          <span class="figure__label">The Crux</span>
+          <span class="figure__note">The flashpoint &mdash; the decisive moment</span>
+        </div>
+        <div class="figure__row">
+          <span class="figure__label">After</span>
+          <span class="figure__note">Historiographical fallout &amp; consequence</span>
+        </div>
+      </div>
+      <img class="figure__x" src="assets/crux-axis.svg" alt="Two dashed lines cross to form an X, with arrows converging from above and below on a single point at the centre.">
+    </div>
+    <figcaption><b>Figure 1</b>The structure of a CRUX monograph. A wide field of preconditions narrows to a single decisive moment, shaping what comes next. The dot marks the crux &mdash; the point our name and our logo are taken from.</figcaption>
+  </figure>
+
+  <p>The intersection &mdash; the literal crux &mdash; is always the focal point. What came before explains why it was inevitable. What came after reveals what it actually meant. The interface does not allow a reader to skip to the conclusion without understanding the structure that produced it.</p>
+
+  <h2>Contact</h2>
+
+  <p>CRUX Monographic History is written, built and operated by Robert O'Sullivan. Write to <a href="mailto:feedback@cruxhistory.com">feedback@cruxhistory.com</a>.</p>
+</main>
+
+<footer class="footer">
+  <p><a href="mailto:feedback@cruxhistory.com">feedback@cruxhistory.com</a></p>
+  <p>Crux Monographic History</p>
+</footer>
+
+<script>
+(function () {
+  var toggle = document.querySelector('.menu-toggle');
+  var menu = document.getElementById('menu');
+  if (!toggle || !menu) return;
+
+  function setOpen(open) {
+    menu.setAttribute('data-open', String(open));
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    document.body.style.overflow = open ? 'hidden' : '';
+    if (open) { var first = menu.querySelector('a'); if (first) first.focus(); }
+  }
+
+  toggle.addEventListener('click', function () {
+    setOpen(menu.getAttribute('data-open') !== 'true');
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && menu.getAttribute('data-open') === 'true') {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+})();
+</script>
+</body>
+</html>

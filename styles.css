@@ -245,6 +245,34 @@ body {
   margin: 1.5rem 0 0;
 }
 
+.stores__badge--soon {
+  position: relative;
+  cursor: default;
+}
+
+.stores__badge--soon:hover,
+.stores__badge--soon:focus-visible {
+  background: transparent;
+  color: var(--charcoal);
+}
+
+.stores__flag {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--crimson);
+  color: var(--linen);
+  font-family: var(--sans);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.35rem 0;
+  pointer-events: none;
+}
+
 /* --------------------------------------------------------------- documents */
 
 .document {
@@ -266,6 +294,7 @@ body {
   font-family: var(--sans);
   font-size: 0.75rem;
   letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--grey);
   margin: -1.5rem 0 2.5rem;
 }
@@ -304,6 +333,19 @@ body {
 .document p { margin: 0 0 1.1rem; }
 .document strong { font-weight: 700; color: var(--charcoal); }
 .document em { font-style: italic; }
+
+.document p,
+.document li {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.document__meta,
+.document figcaption {
+  text-align: left;
+  hyphens: manual;
+}
 
 .document a { color: var(--crimson); text-underline-offset: 0.2em; }
 

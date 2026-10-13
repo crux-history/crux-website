@@ -43,15 +43,15 @@
 <hr />
 <h2>You can read CRUX without an account</h2>
 <p>You do not need to sign in to read CRUX. You can open the app and read without giving us anything at all.</p>
-<p>Signing in is required only if you want to keep reading beyond your first article, or if you want to bookmark something. If you never sign in, we hold no account information about you. We do not know your name or email address. Like any app that connects to the internet, the services we use will still see your device's internet address (see 'Who else touches your data').</p>
+<p>Signing in is needed if you want to bookmark something or have your reading progress saved to your account. If you never sign in, we hold no account information about you. We do not know your name or email address. Like any app that connects to the internet, the app and the services we use will still see your device's internet address, and give your device random anonymous install identifiers (see 'Who else touches your data').</p>
 <hr />
 <h2>What we collect, and why</h2>
 <h3>If you sign in</h3>
 <p>CRUX uses Sign in with Google and Sign in with Apple. There is no password to create and no registration form to fill in. When you sign in, we receive two things:</p>
 <p><strong>An account identifier.</strong> A long string of characters that identifies your account to our systems. It is not your name and it means nothing outside CRUX.</p>
 <p><strong>Your email address.</strong> We ask Google and Apple for your email address and nothing else. We deliberately do not request your name or your profile photo, because nothing in CRUX displays either.</p>
-<p>We use your email address for one purpose: identifying your subscription if something goes wrong with it. If you contact Apple, Google or us about a billing problem, your email address is how your purchase gets matched back to your account. We do not send you marketing. We do not add you to a mailing list.</p>
-<p>Your email address is stored in the authentication system, and a copy is kept with your account profile in our database. Both are deleted when you delete your account.</p>
+<p>We use your email address for one purpose: identifying your account and, if you subscribe, matching a purchase back to you if something goes wrong with it. If you contact Apple, Google or us about a billing problem, your email address is how your purchase gets matched back to your account. We do not send you marketing. We do not add you to a mailing list.</p>
+<p>Your email address is stored in the authentication system and in a copy on your account's profile record. Both are deleted when you delete your account.</p>
 <p>If you sign in with Google, your email address refreshes automatically each time you sign in, so it stays current. If you sign in with Apple, it is captured once when you first sign in.</p>
 <h3>What you read</h3>
 <p>To make the app work, CRUX records:</p>
@@ -157,19 +157,21 @@
 <p>We keep your information for as long as your account exists.</p>
 <p>There is no fixed expiry date and we will not quietly delete an inactive account — if you come back to CRUX in three years, your bookmarks will still be there.</p>
 <p>Your data is removed in two circumstances:</p>
-<p><strong>You delete your account.</strong> Everything goes, immediately. See below.</p>
+<p><strong>You delete your account.</strong> Everything we hold in our own database goes immediately. See below.</p>
 <p><strong>CRUX shuts down.</strong> If the app is permanently withdrawn, we will give at least 60 days' notice and then delete all user data. Nothing is retained, sold, or transferred to anyone else.</p>
 <hr />
 <h2>Deleting your account</h2>
 <p>You can delete your account from inside the app, under Profile. You do not need to email us or ask permission.</p>
 <p>When you do, the following happens automatically:</p>
 <ol>
-<li>Any active subscription is detached, so you are not billed again</li>
-<li>Your bookmarks, reading progress, reading records, access records and usage events are deleted from our database</li>
+<li>Your bookmarks, reading progress and reading records are deleted from our database</li>
+<li>Your usage events and access records are deleted</li>
 <li>Any files associated with your account are removed from storage</li>
 <li>Your account record, including your email address, is erased from the authentication system</li>
+<li>You are signed out of RevenueCat on your device</li>
 <li>You are signed out</li>
 </ol>
+<p>Two of our providers keep a separate record that we cannot delete from inside the app. RevenueCat keeps a customer record under your account identifier, which holds no name or email address, and Sentry keeps past error reports until its retention period ends. If you would like these removed sooner, email <strong>feedback@cruxhistory.com</strong> and we will ask them to delete them.</p>
 <p>This is permanent and cannot be undone. If you sign in again afterwards, you get a brand new account with nothing in it.</p>
 <p>One thing we cannot delete for you: if you have an active subscription, <strong>you must also cancel it through your Apple or Google account settings</strong>, because that is where the billing relationship sits. Deleting your CRUX account stops us from providing the service, but only Apple or Google can stop the payment. There are instructions in the app.</p>
 <hr />

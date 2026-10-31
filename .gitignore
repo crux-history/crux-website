@@ -1,0 +1,31 @@
+# Static HTML/CSS site served by GitHub Pages (see CNAME).
+# Keep secrets, local tooling and OS clutter out of the repository.
+
+# Environment and secret files
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p8
+*.p12
+credentials.json
+
+# Dependencies and build output (if a local tool is ever added)
+node_modules/
+dist/
+_site/
+.cache/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# OS files
+.DS_Store
+Thumbs.db
